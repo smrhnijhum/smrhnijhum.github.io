@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S M Rashidul Hasan Nijhum — PhD, Computer Science</title>
+  <meta name="description" content="Personal academic website of S M Rashidul Hasan Nijhum, PhD student in Computer Science at Colorado State University, researching usable security, IFC, and human-centered security tools." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="shell topbar">
+      <div class="topbar-brand">
+        <a href="#top" class="site-title">S M Rashidul Hasan Nijhum</a>
+        <p class="site-subtitle">Department of Computer Science · Colorado State University · Fort Collins</p>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark theme">
+          <span class="theme-dot"></span>
+          <span class="theme-text">Dark</span>
+        </button>
+        <!-- <a href="https://scholar.google.com/citations?user=E1T6CuUAAAAJ&hl=en&authuser=3" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://www.linkedin.com/in/smrhnijhum/" target="_blank" rel="noopener">LinkedIn</a> -->
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero-shell">
+      <div class="shell hero-outer">
+        <div class="hero-upper"></div>
+        <div class="hero-lower"></div>
+        <div class="hero-split-rule"></div>
+        <div class="hero-content">
+          <div class="hero-photo-wrap">
+            <div class="hero-photo-frame">
+              <img
+                src="profile.webp"
+                alt="Portrait of S M Rashidul Hasan Nijhum at Twin Lakes, Colorado"
+                class="hero-photo"
+              />
+            </div>
+          </div>
+          <div class="hero-copy">
+            <p class="hero-kicker">PhD Student in Computer Science</p>
+            <h1 class="hero-name">S M Rashidul<br>Hasan Nijhum</h1>
+            <p class="hero-affiliation">Colorado State University &nbsp;·&nbsp; Fort Collins, CO</p>
+            <p class="hero-text">
+              I work at the intersection of <strong>usable security</strong>, <strong>information flow control</strong>, and <strong>human-computer interaction</strong>.
+              My current work looks at making <strong>Information Flow Control (IFC)</strong>
+              actually usable for developers, and understanding when institutions
+              trust <strong>Trusted Execution Environments (TEEs)</strong> enough to deploy them in practice.
+              I am exploring this field under the supervision of <strong>Dr. McKenna McCall</strong>.
+            </p>
+            <div class="hero-chips">
+              <span class="hero-chip">Usable Security</span>
+              <span class="hero-chip">Formal Methods</span>
+              <span class="hero-chip">Information Flow Control</span>
+              <span class="hero-chip">Trusted Execution Environments</span>
+              <span class="hero-chip">Human-Computer Interaction</span>
+              
+              <span class="hero-chip">Cybersecurity</span>
+            </div>
+            <div class="hero-links">
+              <a class="button solid" href="CV.pdf" target="_blank" rel="noopener">Download CV</a>
+              <a class="button ghost" href="#research">Research Focus</a>
+              <a class="button ghost" href="#publications">Publications</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <!-- FIX 5: reworded h2 to avoid single-word orphan -->
+    <section class="section" id="about">
+      <div class="shell about-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Security research that takes the human side seriously</h2>
+          <div class="about-meta">
+            <div class="about-meta-row">
+               <span class="meta-label">Program</span>
+              <span class="meta-value">PhD in Computer Science · Colorado State University, USA</span>
+            </div>
+            <!-- <div class="about-meta-row">
+              
+              <span class="meta-label">Advisor</span>
+              <span class="meta-value">Dr. McKenna McCall, Assistant Professor</span>
+            
+            </div> -->
+            <!-- <div class="about-meta-row">
+              <span class="meta-label">GPA</span>
+              <span class="meta-value">4.00 / 4.00 (after 3 semesters)</span>
+            </div> -->
+            <div class="about-meta-row">
+              <span class="meta-label">Prior</span>
+              <span class="meta-value">B.Sc. CSE · Chittagong University of Engineering and Technology (CUET), Bangladesh</span>
+            </div>
+          </div>
+        </div>
+        <!-- FIX 7+8: removed em dashes, rewrote paragraph 2 to flow naturally -->
+        <div class="content-card">
+          <p>
+            I am a PhD student in the Department of Computer Science at Colorado State University,
+            working with <strong>Dr. McKenna McCall</strong>. My research is about the gap between
+            what security systems can guarantee on paper and what people are actually willing to
+            trust and deploy. Closing that gap takes more than better engineering.
+          </p>
+          <p>
+            On the IFC side, I am building empirical foundations for understanding where real
+            information flow vulnerabilities live in production software. The other project studies trusted execution environments and asks a practical question: what makes them technically promising, and what still makes organizations hesitant to trust them?
+          </p>
+          <p>
+            Alongside security research, I have also worked on the application of Machine Learning, and AR/VR studies. That mix continues to shape how I approach evidence, reproducibility, and research writing.
+          Before coming to CSU, I spent about two years as an instructor at Green University of Bangladesh. 
+          </p>
+          <!-- <p>
+            Watching people struggle with badly designed tools shaped my interest in
+            usable security more directly than any textbook could.
+          </p> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="section alt-bg" id="research">
+      <div class="shell">
+        <div class="section-heading centered">
+          <p class="section-label centered">Research Focus</p>
+          <!-- <h2>Two active projects, one driving question</h2> -->
+           <h2>Current directions and broader interests</h2>
+        </div>
+        <div class="research-band research-band-two">
+          <article class="research-panel emphasis">
+            <span class="panel-no">CURRENT · PROJECT 01</span>
+            <h3>Information Flow Control &amp; Vulnerability Analysis</h3>
+            <p>
+              Most IFC tools get abandoned because they ask too much from developers. This project
+              starts from the other end: looking at real CVE data to understand what kinds of
+              information flow problems actually show up in production software, and whether the
+              controls developers already have access to would have caught them. The work involves
+              building filtering pipelines, clustering vulnerability text at scale, and careful
+              manual annotation to separate signal from noise.
+            </p>
+          </article>
+          <article class="research-panel">
+            <span class="panel-no">CURRENT · PROJECT 02</span>
+            <h3>Trusted Execution Environments in Practice</h3>
+            <p>
+              TEEs sound compelling on paper. Adopting Intel SGX or similar hardware enclaves
+              for sensitive workloads in healthcare involves considerably more than getting the
+              engineering right. This project examines the compliance burden, legal exposure,
+              vendor accountability, and whether institutions can realistically trust the
+              attestation story when patient data or AI model weights are running inside
+              an enclave they cannot fully inspect.
+            </p>
+          </article>
+
+          
+        </div>
+
+        <div class="research-secondary">
+          <article class="research-secondary-item">
+            <span class="panel-no">BROADER INTERESTS</span>
+            <h3>Usable Security, HCI, and Interactive Systems</h3>
+            <p>
+              I am broadly interested in how security systems, interactive tools, and immersive environments are evaluated, explained, and made usable for real people.
+          
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <!-- FIX 2: pub-feature card gets flex column to fill height; updated title -->
+    <section class="section" id="publications">
+      <div class="shell">
+        <div class="section-heading centered">
+          <p class="section-label centered">Publications</p>
+          <h2>Published and accepted work</h2>
+        </div>
+        <div class="publication-grid">
+          <article class="pub-feature">
+            <p class="pub-type">Featured · IEEE ISMAR 2025</p>
+            <h3>The State of Replication at IEEE ISMAR and IEEE VR: A Scoping Literature Review (2010–2024) and Online Survey</h3>
+            <p class="pub-desc">A scoping review of replication practices across fifteen years of AR and VR research, paired with an online survey of the research community.</p>
+            <p class="pub-authors">M.S. Arefin, V. Biener, <strong>S.M.R.H. Nijhum</strong>, F. Weidner, J. Grubert, J.E. Swan II</p>
+            <div class="pub-feature-spacer"></div>
+            <a class="pub-cta" href="https://doi.org/10.1109/ISMAR67309.2025.00086" target="_blank" rel="noopener">Open publication →</a>
+          </article>
+          <div class="pub-list">
+            <div class="pub-list-header"><p>Other publications</p></div>
+
+            <div class="pub-list-item">
+              <span class="pub-list-num">4</span>
+              <p class="pub-list-title">Enhancing Travel Recommendation Using Collaborative Filtering and Hybrid Data-Driven Architecture</p>
+              <span class="pub-list-venue">ECCE 2025</span>
+              <a class="pub-list-link" href="https://doi.org/10.1109/ECCE64574.2025.11014034" target="_blank" rel="noopener">DOI →</a>
+            </div>
+
+            <div class="pub-list-item">
+              <span class="pub-list-num">2</span>
+              <p class="pub-list-title">Enhancing Bangladeshi Plants Classification Using Transfer Learning and CNN-Based Architecture</p>
+              <span class="pub-list-venue">ICEEICT 2024</span>
+              <a class="pub-list-link" href="https://doi.org/10.1109/ICEEICT62016.2024.10534495" target="_blank" rel="noopener">DOI →</a>
+            </div>
+            <div class="pub-list-item">
+              <span class="pub-list-num">3</span>
+              <p class="pub-list-title">HybStock: A Hybrid Deep Learning Based Model to Predict Stock Market on Dhaka Stock Exchange</p>
+              <span class="pub-list-venue">ICEEICT 2024</span>
+              <a class="pub-list-link" href="https://doi.org/10.1109/ICEEICT62016.2024.10534537" target="_blank" rel="noopener">DOI →</a>
+            </div>
+            
+            <div class="pub-list-item">
+              <span class="pub-list-num">5</span>
+              <p class="pub-list-title">Recurrent Neural Network Based Hybrid Deep Learning Architecture for Enhanced Network Intrusion Detection</p>
+              <span class="pub-list-venue">PEEIACON 2024</span>
+              <a class="pub-list-link" href="https://doi.org/10.1109/PEEIACON63629.2024.10800240" target="_blank" rel="noopener">DOI →</a>
+            </div>
+            <div class="pub-list-item">
+              <span class="pub-list-num">6</span>
+              <p class="pub-list-title">Enhancing Real-Time Converter for Bangla Sign Language with the Integration of Dynamic Words</p>
+              <span class="pub-list-venue">ICCIT 2024</span>
+              <a class="pub-list-link" href="https://doi.org/10.1109/ICCIT64611.2024.11022002" target="_blank" rel="noopener">DOI →</a>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top:1.4rem;font-size:0.8rem;color:var(--muted);text-align:center;">
+          Full list on
+          <a href="https://scholar.google.com/citations?user=E1T6CuUAAAAJ&hl=en&authuser=3" target="_blank" rel="noopener"
+             style="color:var(--accent);font-weight:600;border-bottom:1px solid var(--accent);padding-bottom:1px;">
+            Google Scholar →
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section alt-bg" id="projects">
+      <div class="shell">
+        <div class="section-heading centered">
+          <p class="section-label centered">Research Projects</p>
+          <h2>Recent research writing, and graduate course projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card wide">
+            <span class="project-term">Spring 2026 · CS 540</span>
+            <h3>Can AI Reduce Warning Fatigue?</h3>
+            <p>
+              A structured literature review on learning-based approaches for static-analysis security alerts,
+              covering warning prioritization, explanation and usability support, automated repair, and hybrid end-to-end pipelines.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <span class="project-term">Fall 2025</span>
+            <h3>SoK: Usable Security Type Systems</h3>
+            <p>
+              A systematization of developer-oriented usability evidence for security type systems, focused on evaluation methods,
+              developer effort, feedback quality, and practical design features.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <span class="project-term">Fall 2025</span>
+            <h3>CVSS v3.x vs. v4.0 Scoring Analysis</h3>
+            <p>
+              A large-scale study of 8,133 paired CVEs that examines score shifts, severity migration,
+              and the metric-level reasons vulnerabilities move across severity bands.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <span class="project-term">Spring 2025 · CS 535</span>
+            <h3>Scalable Multi-Document Text Summarization</h3>
+            <p>
+              A distributed deep learning project using Multi-News, PEGASUS, BART, and LED,
+              with PyTorch Distributed Data Parallel and Apache Spark for scalable training and evaluation.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <span class="project-term">Spring 2025 · CS 465</span>
+            <h3>LayeredScreen: Depth-Aware Window Switching for XR</h3>
+            <p>
+              An XR interaction study on HoloLens 2 that compared layered window-management techniques and showed
+              strong user preference for simpler, familiar layouts.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <span class="project-term">Fall 2024 · CS 464</span>
+            <h3>Stress Relievers: VR-Based Stress Management</h3>
+            <p>
+              A virtual reality study built in Unity HDRP on Meta Quest 3, using beach, forest, and campfire environments
+              and heart-rate-based measurement to evaluate stress reduction.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEACHING -->
+    <!-- FIX 4: emoji replaced with styled text badges; FIX 7: em dashes removed -->
+    <section class="section alt-bg" id="teaching">
+      <div class="shell teaching-grid">
+        <div>
+          <p class="section-label">Teaching &amp; Mentorship</p>
+          <h2>Two years of full-time teaching left a mark</h2>
+          <div class="teaching-facts">
+            <div class="fact-chip">
+              <span class="fact-badge">GTA</span>
+              <p class="fact-text">
+                <strong>CSU · Colorado State University</strong> - Graduate Teaching Assistant for
+                <strong>CS 201: Ethical Computing Systems</strong>
+                (August to December 2025).
+              </p>
+            </div>
+            <div class="fact-chip">
+              <span class="fact-badge">Inst</span>
+              <p class="fact-text">
+                <strong>Instructor · Green University of Bangladesh</strong> - Taught eight core CS
+                courses, supervised <strong>17 undergraduate researchers</strong>, and developed new
+                curriculum that raised student engagement by 20% (October 2022 to July 2024).
+              </p>
+            </div>
+            <div class="fact-chip">
+              <span class="fact-badge">★</span>
+              <p class="fact-text">
+                Awarded <strong>Best Pro-Active Instructor</strong> by the Centre of Excellence in
+                Teaching and Learning (CETL), Green University of Bangladesh, 2023.
+              </p>
+            </div>
+            <div class="fact-chip">
+              <span class="fact-badge">Coord</span>
+              <p class="fact-text">
+                <strong>Project &amp; Thesis Coordinator · GUB</strong> - Ran the coordination of
+                student research proposals, organized evaluation seminars, and assembled review
+                committees (2024).
+              </p>
+            </div>
+          </div>
+        </div>
+       
+        <div class="content-card">
+          <p>
+            I enjoy teaching because it keeps technical work connected to people. My classroom experience spans programming,
+            AI, machine learning, security, data mining, systems design, and software engineering.
+          </p>
+          <p>
+            Beyond instruction itself, I have also worked closely with student research, curriculum design, and academic coordination.
+            That experience has shaped how I explain technical ideas and how I think about clarity in both writing and teaching.
+          </p>
+          <div class="courses-wrap">
+            <p class="courses-label">Courses taught</p>
+            <div class="courses-pills">
+              <span class="pill">Structured Programming</span>
+              <span class="pill">Artificial Intelligence</span>
+              <span class="pill">Machine Learning</span>
+              <span class="pill">Computer &amp; Cyber Security</span>
+              <span class="pill">Data Mining</span>
+              <span class="pill">Information &amp; System Design</span>
+              <span class="pill">Computer Architecture</span>
+              <span class="pill">Software Engineering</span>
+              <span class="pill">Ethical Computing (CS 201)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <!-- FIX 9: Instructor card rewritten as full sentences; FIX 7: no em dashes -->
+    <section class="section dark-bg" id="experience">
+      <div class="shell">
+        <div class="section-heading centered light">
+          <p class="section-label centered light">Education &amp; Experience</p>
+          <h2 style="color:white;">The path so far</h2>
+        </div>
+        <div class="timeline-grid">
+          <article class="timeline-card">
+            <span class="time">Jan 2026 – Present</span>
+            <h3>Graduate Research Assistant</h3>
+            <p>
+              Department of Computer Science, Colorado State University.
+              Supervised by <strong>Dr. McKenna McCall</strong>.
+              Working on IFC pipeline development and TEE adoption research
+              for privacy-sensitive AI workflows.
+            </p>
+          </article>
+          <article class="timeline-card">
+            <span class="time">Aug 2025 – Dec 2025</span>
+            <h3>Graduate Teaching Assistant</h3>
+            <p>
+              Department of Computer Science, Colorado State University.
+              Served as GTA for <strong>CS 201: Ethical Computing Systems</strong>.
+            </p>
+          </article>
+          <article class="timeline-card">
+            <span class="time">Aug 2024 – May 2025</span>
+            <h3>Graduate Research Assistant</h3>
+            <p>
+              Department of Computer Science, Colorado State University.
+              Conducted AR/VR and HCI research, contributing to the systematic
+              survey accepted at <strong>IEEE ISMAR 2025</strong>.
+            </p>
+          </article>
+          <!-- FIX 9: full sentences, not fragments -->
+          <article class="timeline-card">
+            <span class="time">Oct 2022 – Jul 2024</span>
+            <h3>Instructor</h3>
+            <p>
+              Department of CSE, Green University of Bangladesh.
+              Taught eight courses, supervised 17 undergraduate researchers,
+              and received the <strong>Best Pro-Active Instructor</strong> award from CETL.
+            </p>
+          </article>
+        </div>
+        <div class="timeline-grid" style="margin-top:1.1rem;">
+          <article class="timeline-card education" style="grid-column: span 2;">
+            <span class="time">August 2024 – Present</span>
+            <div class="edu-item" style="padding-bottom:0;margin-bottom:0;border-bottom:none;">
+              <p class="edu-degree">Doctor of Philosophy (PhD)</p>
+              <p class="edu-inst">Colorado State University</p>
+              <!-- <p class="edu-detail">Department of Computer Science · GPA: 4.00 / 4.00</p> -->
+               <p class="edu-detail">Department of Computer Science</p>
+            </div>
+          </article>
+          <article class="timeline-card education" style="grid-column: span 2;">
+            <span class="time">Feb 2017 – Sep 2022</span>
+            <div class="edu-item" style="padding-bottom:0;margin-bottom:0;border-bottom:none;">
+              <p class="edu-degree">Bachelor of Science (B.Sc.) in CSE</p>
+              <p class="edu-inst">Chittagong University of Engineering and Technology (CUET)</p>
+              <p class="edu-detail">CGPA: 3.74 / 4.00 (4th in batch)</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIX 11: NEW Awards & Activities section -->
+    <section class="section" id="awards">
+      <div class="shell">
+        <div class="section-heading centered">
+          <p class="section-label centered">Awards &amp; Activities</p>
+          <h2>Outside the lab and the classroom</h2>
+        </div>
+        <div class="awards-grid">
+          <div class="award-card award-highlight">
+            <span class="award-year">2023</span>
+            <h3>Best Pro-Active Instructor</h3>
+            <p>Centre of Excellence in Teaching and Learning (CETL), Green University of Bangladesh. Recognised for initiative in curriculum development and undergraduate research supervision.</p>
+          </div>
+          <div class="award-card">
+            <span class="award-year">2026</span>
+            <h3>Sports Coordinator</h3>
+            <p>Bangladesh Student Association (BSA), Colorado State University. Organising sporting events and community activities for the Bangladeshi student community at CSU.</p>
+          </div>
+          <div class="award-card">
+            <span class="award-year">2024</span>
+            <h3>Project &amp; Thesis Coordinator</h3>
+            <p>Green University of Bangladesh. Led teams coordinating student research proposals, organized evaluation seminars, and finalized faculty review committees.</p>
+          </div>
+          <div class="award-card">
+            <span class="award-year">CUET</span>
+            <h3>Organizing Secretary</h3>
+            <p>CUET Computer Club. Led technical events and workshops at the undergraduate level, building a collaborative space for student programmers and researchers.</p>
+          </div>
+          <div class="award-card">
+            <span class="award-year">CUET</span>
+            <h3>Finance Secretary</h3>
+            <p>CUET REMIAN Association. Managed budgeting and financial planning for departmental events, handling logistics with precision and accountability.</p>
+          </div>
+          <div class="award-card">
+            <span class="award-year">DRMC</span>
+            <h3>Active Member</h3>
+            <p>DRMC Debating Society. Regular participant in competitive debates, developing skills in argumentation and the ability to engage with a wide range of topics under pressure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="shell">
+        <div class="contact-box">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2 class="contact-heading">Let's connect<br>&amp; collaborate.</h2>
+            <p style="color:var(--muted);font-size:0.94rem;max-width:36ch;">
+              Happy to talk about research, collaboration, or just exchange ideas.
+              I reply to every well-considered message.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a class="contact-link-item" href="mailto:smrashidulhasannijhum@gmail.com">
+              <em class="contact-icon">✉</em>
+              <div>
+                <span class="contact-type">Email Me Your Query!</span>
+          
+              </div>
+            </a>
+            <a class="contact-link-item" href="https://www.linkedin.com/in/smrhnijhum/" target="_blank" rel="noopener">
+              <em class="contact-icon" style="font-family:'Cormorant Garamond',serif;font-weight:700;">in</em>
+              <div>
+                <span class="contact-type">Connect Me in LinkedIn</span>
+              </div>
+            </a>
+            <a class="contact-link-item" href="https://scholar.google.com/citations?user=E1T6CuUAAAAJ&hl=en&authuser=3" target="_blank" rel="noopener">
+              <em class="contact-icon contact-icon-scholar">G</em>
+              <div>
+                <span class="contact-type">Google Scholar</span>
+                <span class="contact-value">View all publications</span>
+              </div>
+            </a>
+            <a class="contact-link-item" href="CV.pdf" target="_blank" rel="noopener">
+              <em class="contact-icon">↓</em>
+              <div>
+                <span class="contact-type">Curriculum Vitae</span>
+                <span class="contact-value">Download PDF</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span class="footer-copy">© 2026 S M Rashidul Hasan Nijhum</span>
+      <!-- <div class="footer-links">
+        <a href="mailto:smrashidulhasannijhum@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/smrhnijhum/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=E1T6CuUAAAAJ&hl=en&authuser=3" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="CV.pdf" target="_blank" rel="noopener">CV</a>
+      </div> -->
+    </div>
+  </footer>
+
+
+  <script>
+  const themeToggle = document.getElementById("themeToggle");
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-theme");
+    themeToggle.querySelector(".theme-text").textContent = "Light";
+  }
+
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+
+    const isDark = document.body.classList.contains("dark-theme");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    themeToggle.querySelector(".theme-text").textContent = isDark ? "Light" : "Dark";
+  });
+</script>
+
+</body>
+</html>
